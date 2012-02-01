@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Heima</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%#= yield :metadata %>
 </head>
 <body>
+  <%= render :partial => "shared/header" %>
 
 <%= yield %>
 

@@ -4,7 +4,7 @@ Heima::Application.routes.draw do
   # first created -> highest priority.
   
   # config/routes.rb
-  scope "/:locale" do
+  scope "/:locale", :as => "l" do
     get "home/index" => "home#index"
     root :to => "home#index"
   end
