@@ -1,2 +1,13 @@
 %h1= t "services.title"
 %p= t "services.main_desc"
+
+- services_list =  ["imagen_corporativa", "elaboracion_listados", "confirmacion_asistentes"]
+
+#services_container.grid_16
+  %ul#services_list.grid_4.alpha
+    - services_list.each do |service|
+      =service_link service
+
+  %service_details_container.grid_12.omega
+    - services_list.each do |service|
+      =service_details_panel service
