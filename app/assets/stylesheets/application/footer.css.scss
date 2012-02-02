@@ -7,4 +7,14 @@ footer {
   background-repeat: no-repeat;
   background-position: bottom left;
   
+  p {
+      margin-top: 20px;
+        float: left;
+        color: white;
+    }
+  #page_authors {
+      margin: { top: 50px; right: 10px;}
+    float: right;
+    a {color: white;}
+  }
 }

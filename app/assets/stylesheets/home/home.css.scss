@@ -6,15 +6,16 @@
 
 
 body {
-        background-image: $home_body_background_url;
+  background-image: $home_body_background_url;
   background-repeat: no-repeat;
   background-position: top center;
   
   #content {
-      #home_panels {
-        margin: {top: 200px; bottom: 100px;}
+      ul#home_panels {
+        height: 200px;
+        margin: {top: 400px; bottom: 50px; left: 30px; right: 30px;}
         li {
-            height: 200px;
+            height: 100%;
             border: {
                 radius: 10px;
             }
@@ -24,7 +25,7 @@ body {
                 radius: 7px;
             }
            margin: 10px 10px;
-           width: 200px;
+           width: 260px;
           }
         }
         

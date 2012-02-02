@@ -3,4 +3,5 @@
 
 en:
   home:
-    hello: "Hello world"
+    panels:
+      presentation: "Heima Tours Galicia, We blah blah blah in English!."

@@ -1,11 +1,11 @@
 - content_for(:metadata) do 
   - ""
 
-%ul#home_panels.grid_12.prefix_2.suffix_2
+%ul#home_panels
   
-  %li.grid_4.alpha
-    %p= t("home.panels.presentation")
-  %li.grid_4
+  %li.grid_5
+    %p= t("home.panels.presentation").html_safe
+  %li.grid_5
     = image_tag "home/Igape.jpg"
-  %li.grid_4.omega
+  %li.grid_5
     = image_tag "home/Igape.jpg"
