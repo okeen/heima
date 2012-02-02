@@ -1,7 +1,9 @@
 module ServicesHelper
   
   def service_link(service)
-    link_to t("services.#{service}.name"), "#", "data-service-name" => service 
+    content_tag :li do
+      link_to t("services.#{service}.name"), "#", "data-service-name" => service 
+    end
   end
   
   def service_details_panel(service)
@@ -9,9 +11,9 @@ module ServicesHelper
       :class => "service_details_panel", 
       "data-service-name" => service,
       :style => "display:none"     do 
-          content_tag(:h1, t("services.#{service}.name"))+
+          content_tag(:h2, t("services.#{service}.name"))+
           content_tag(:p, t("services.#{service}.description"))+
-          image_tag( image_path("services/#{service}"), :alt => service)          
+          image_tag( image_path("services/#{service}.jpg"), :alt => service)          
             
     end
   end
