@@ -28,4 +28,45 @@ es:
     confirmacion_asistentes: 
       name: "Confirmación de asistentes"
       description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
-      
+     
+    mailing: 
+      name: "Mailing"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    secretaria_tecnica: 
+      name: "Secretaría técnica"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    protocolo_evento: 
+      name: "Protocolo del evento"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    azafatas_congresos_imagen: 
+      name: "Azafatas de congresos"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    medios_audiovisuales: 
+      name: "Medios audiovisuales"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    gabinete_prensa: 
+      name: "Gabinete de prensa"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    transfers: 
+      name: "Transfers"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    montaje_stands: 
+      name: "Montaje de stands"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+   
+    traductores: 
+      name: "Traductores"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+   
+    viajes_alojamiento: 
+      name: "Viajes y alojamiento"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+   
+    
