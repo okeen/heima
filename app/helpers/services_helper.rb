@@ -13,7 +13,7 @@ module ServicesHelper
       :style => "display:none"     do 
           content_tag(:h2, t("services.#{service}.name"))+
           content_tag(:p, t("services.#{service}.description"))+
-          image_tag( image_path("services/#{service}.jpg"), :alt => service)          
+          image_tag( image_path("services/servicios.jpg"), :alt => service)          
             
     end
   end
