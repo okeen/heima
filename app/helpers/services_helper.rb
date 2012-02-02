@@ -2,7 +2,7 @@ module ServicesHelper
   
   def service_link(service)
     content_tag :li do
-      link_to t("services.#{service}.name"), "#", "data-service-name" => service 
+      link_to t("services.#{service}.name"), "##{service}", "data-service-name" => service 
     end
   end
   

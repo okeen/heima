@@ -2,6 +2,70 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 gl:
+  header:
+    nav:
+      home: Inicio
+      services: Servizos
+      events: Eventos
+      contact: Contacto
+  
   home:
     panels:
-      presentation: "Ainda falta moito camiño por facer"
+      presentation: "<strong>Heima Tours Galicia</strong>, somos unha empresa dedicada al mundo de los viajes y congresos compuesta por un excelente equipo de profesionales, expertos en turismo, con una dilatada experiencia en el mundo del protocolo y la organización de eventos."
+  
+  services:
+    title: Servizos
+    main_desc: "Servizos prestados por Heima"
+    
+    imagen_corporativa: 
+      name: "Diseño da imaxen corporativa"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    elaboracion_listados: 
+      name: "Elaboració de listados"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    confirmacion_asistentes: 
+      name: "Confirmació dos asistentes"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    mailing: 
+      name: "Mailing"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    secretaria_tecnica: 
+      name: "Secretaría técnica"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    protocolo_evento: 
+      name: "Protocolo do evento"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    azafatas_congresos_imagen: 
+      name: "Azafatas de congresos"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    medios_audiovisuales: 
+      name: "Medios audiovisuales"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    gabinete_prensa: 
+      name: "Gabinete de prensa"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    transfers: 
+      name: "Transfers"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    montaje_stands: 
+      name: "Montaje de stands"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+   
+    traductores: 
+      name: "Traductores"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+   
+    viajes_alojamiento: 
+      name: "Viajes y alojamiento"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+   

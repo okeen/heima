@@ -2,6 +2,70 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  header:
+    nav:
+      home: Home
+      services: Services
+      events: Events
+      contact: Contact
+  
   home:
     panels:
-      presentation: "Heima Tours Galicia, We blah blah blah in English!."
+      presentation: "<strong>Heima Tours Galicia</strong>, we are a blah blah...."
+  
+  services:
+    title: Services
+    main_desc: "Services offered by Heima"
+    
+    imagen_corporativa: 
+      name: "Corporate image"
+      description: ""
+    
+    elaboracion_listados: 
+      name: "Listing management"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    confirmacion_asistentes: 
+      name: "Attendance confirmation"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    mailing: 
+      name: "Mailing"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    secretaria_tecnica: 
+      name: "Secretaría técnica"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    protocolo_evento: 
+      name: "Event protocol"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    azafatas_congresos_imagen: 
+      name: "Congress ladies"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    medios_audiovisuales: 
+      name: "Media management"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+    
+    gabinete_prensa: 
+      name: "Press"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    transfers: 
+      name: "Transfers"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+     
+    montaje_stands: 
+      name: "Stands creation"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+   
+    traductores: 
+      name: "Translators"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+   
+    viajes_alojamiento: 
+      name: "Trips and hosting"
+      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+   

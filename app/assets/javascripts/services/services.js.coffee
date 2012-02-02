@@ -8,7 +8,7 @@ window.showServiceInfo= (service)->
   
 $ ->
   $("#services_list li a").bind "click",(e) ->
-    e.preventDefault()
+    #e.preventDefault()
     service_name = $(e.target).attr("data-service-name")
     showServiceInfo(service_name)
     

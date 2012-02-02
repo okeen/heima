@@ -5,8 +5,10 @@
 @import "../shared/base.css.scss";
 @import "../application/header.css.scss";
 @import "../application/footer.css.scss";
+@import "../application/languages_bar.css.scss";
 
 body {
+    
     #content {
         background: $gris_claro;
         border-radius: 15px;
