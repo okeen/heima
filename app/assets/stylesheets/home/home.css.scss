@@ -10,10 +10,21 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   
+  img#main_logo {
+    position: relative;
+    left: 200px;
+    top: 100px;
+    float: left;
+    width: 300px;
+    
+  }
   #content {
+      height: 200px;
+      padding-top: 400px;
+      background: none;
       ul#home_panels {
         height: 200px;
-        margin: {top: 400px; bottom: 50px; left: 30px; right: 30px;}
+        margin: {top: 0px; bottom: 50px; left: 30px; right: 30px;}
         li {
             height: 100%;
             border: {

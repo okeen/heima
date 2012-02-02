@@ -8,7 +8,9 @@
 
 body {
     #content {
-      
+      background: $gris_claro;
+      border-radius: 15px;
+      margin: {top:20px; bottom: 20px;}
    }
   a {
    text-decoration: none;
@@ -16,4 +18,5 @@ body {
   strong {
     color: $verde;
   }
+  .translation_missing {color: red;}
 }

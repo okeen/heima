@@ -1,11 +1,13 @@
 Heima::Application.routes.draw do
   
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
   # config/routes.rb
   scope "/:locale", :as => "l" do
-    get "home/index" => "home#index"
+    get "home/index" => "home#index", :as => "home"
+    get "services/index" => "services#index", :as => "services"
     root :to => "home#index"
   end
   
