@@ -1,0 +1,11 @@
+/*
+* depend_on shared/base
+*/
+
+@import "shared/base.css.scss";
+
+body {
+  a {
+   text-decoration: none;
+  }
+}

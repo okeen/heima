@@ -1,0 +1,30 @@
+
+
+header {
+  width: 100%;  
+  height: 100px;
+  background-image: $header_url;
+  background-repeat: no-repeat;
+  background-position: top right;
+  img#main_logo {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    float: left;
+    width: 300px;
+    
+  }
+  ul#header_nav {
+    text-align: center;
+    float: right;
+    margin: {top: 20px;}
+    nav li a {
+        color: white;
+        }
+    nav li.last {
+        width: 80px;
+        margin-right: 0px;
+    }
+        
+    }
+}
