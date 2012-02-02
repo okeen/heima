@@ -20,11 +20,12 @@ header {
     margin: {top: 20px;}
     nav li a {
         color: white;
+        &:hover {
+            background: $gris_claro;
+            color: $gris_oscuro; 
+            }
         }
-    nav li.last {
-        width: 80px;
-        margin-right: 0px;
-    }
+        
         
     }
 }

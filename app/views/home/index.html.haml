@@ -1,5 +1,11 @@
 - content_for(:metadata) do 
   - ""
 
-%h1= t "home.hello"
-%p Find me in app/views/home/index.html.haml
+%ul#home_panels.grid_12.prefix_2.suffix_2
+  
+  %li.grid_4.alpha
+    %p= t("home.panels.presentation")
+  %li.grid_4
+    = image_tag "home/Igape.jpg"
+  %li.grid_4.omega
+    = image_tag "home/Igape.jpg"

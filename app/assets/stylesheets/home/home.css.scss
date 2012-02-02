@@ -1,0 +1,33 @@
+/*
+* depend_on shared/base
+*/
+
+@import "shared/base.css.scss";
+
+
+body {
+        background-image: $home_body_background_url;
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+  #content {
+      #home_panels {
+        margin: {top: 200px; bottom: 100px;}
+        li {
+            height: 200px;
+            border: {
+                radius: 10px;
+            }
+            background: $gris_claro;
+        img, p {
+           border: {
+                radius: 7px;
+            }
+           margin: 10px 10px;
+           width: 200px;
+          }
+        }
+        
+      }
+  }
+}
