@@ -3,7 +3,7 @@ Heima::Application.configure do
 
   # Code is not reloaded between requests
   config.cache_classes = true
-  config.assets.precompile+=['site.js','home.js','site.css', "home.css", "services.js", "services.css", "events.js", "events.css"]
+  config.assets.precompile+=['site.js','home.js','site.css', "home.css", "services.js", "services.css", "events.js", "events.css","contact.js", "contact.css"]
   
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
