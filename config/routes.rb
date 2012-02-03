@@ -1,6 +1,7 @@
 Heima::Application.routes.draw do
   
   
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
@@ -9,8 +10,11 @@ Heima::Application.routes.draw do
     get "home/" => "home#index", :as => "home"
     get "services/" => "services#index", :as => "services"
     get "events/" => "events#index", :as => "events"
+    get "contact/" => "contact#index", :as => "contact"
+  
     root :to => "home#index"
   end
+  
   
   root :to => "home#index"
   # Sample of regular route:
