@@ -16,22 +16,31 @@ header {
         
     }
     ul#header_nav {
-        $nav_item_separation: 5px;
+        $nav_item_separation: 0px;
         @include inline_block_list_container;
-        width: 340px;
+        background: white;   
+        opacity: 0.7;
+        width: 305px;
         text-align: center;
+        margin: {top: 5px; right: 5px;}
         float: right;
-        margin: {top: 5px;}
         nav {
-           @include inline_block_list_item($nav_item_separation);
-           width: 70px;
-            
-           &:first-child * { @include alpha;}
-           &:last-child * { @include omega;}  
+            @include inline_block_list_item($nav_item_separation);
+            margin: {top: 4px;bottom: 0px;}
+            width: 70px;
+            &:first-child * { @include alpha;}
+            &:last-child  { 
+                margin-right: 0px;
+            }  
         }
         nav li {
+            @include border-top-radius(5px);
+            background: $verde;
+            opacity: 1.0; 
             width: 100%;
-            a {color: white;}
+            a {
+                color: white;
+            }
             &:hover, &:hover a {
                 background: $gris_claro;
                 color: $verde; 

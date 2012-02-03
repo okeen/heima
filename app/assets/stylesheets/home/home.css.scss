@@ -21,12 +21,12 @@ body {
     #content {
         
         //height: 200px;
-        padding-top: 400px;
-        //background: none;
+        padding-top: 300px;
+        background: none;
         ul#home_panels {
             
             height: 200px;
-            margin: {top: 0px; bottom: 50px; left: 30px; right: 30px;}
+            margin: {top: 0px; bottom: 30px; left: 30px; right: 30px;}
             li {
                 @include grid(5,16);
                 height: 100%;
@@ -47,7 +47,9 @@ body {
             border: 2px solid $gris_oscuro {
                 radius: 5px;           
             }
-            margin: 10px;
+            @include grid(16,16);
+            margin-bottom: 0px;
+            
             $customer_image_separation: 10px;
             padding: $customer_image_separation;
             legend {
