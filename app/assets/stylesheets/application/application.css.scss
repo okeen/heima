@@ -6,6 +6,8 @@
 @import "../application/header.css.scss";
 @import "../application/footer.css.scss";
 @import "../application/languages_bar.css.scss";
+@import "960/grid";
+@import "compass/utilities/general/clearfix";
 
 body {
     
@@ -16,10 +18,10 @@ body {
         margin: {top:30px; bottom: 20px;}
         padding: {top: 20px;}
         h1 {
-           text-align: left;
-           color: $gris_oscuro;
-           width: 100%;
-           margin: {bottom: 30px;left: 20px;}
+            text-align: left;
+            color: $gris_oscuro;
+            width: 100%;
+            margin: {bottom: 30px;left: 20px;}
         }
     }
     a {
@@ -32,10 +34,14 @@ body {
 }
 
 .big_panel {
+    $ninesixty-columns: 16;
+    @include grid(16);
     background: white;
     padding: {top: 20px; bottom: 10px;}    
     border-radius: 15px;
     .left_panel {
+        @include grid(4);
+        @include alpha;        
         margin: {top: 25px; bottom: 25px;}
         $item_height: 25px;
         //border-right: 2px solid $verde;
@@ -47,7 +53,7 @@ body {
             width: 100%;
             text-align: right;
             padding: {left: 5px; right: 5px;}
-        
+            
             &:nth-child(even) {
                 background: lighten($verde, 44%);
             }
@@ -68,22 +74,24 @@ body {
         }        
     }
     .right_panel {
+        @include grid(12);
+        @include omega;        
         h2 {
-        color: $verde;
-        text-align: center;
-        width: 65%;
-        margin: auto auto ;
-        border-bottom: 1px solid $verde;
-     } 
-     p {
-        margin: {top: 30px; bottom: 20px; left: 30px;}
-     }
-     img {
-        display: block;
-        height: 200px;
-        width: auto;
-        margin: auto auto;
-     }
-     
+            color: $verde;
+            text-align: center;
+            width: 65%;
+            margin: auto auto ;
+            border-bottom: 1px solid $verde;
+        } 
+        p {
+            margin: {top: 30px; bottom: 20px; left: 30px;}
+        }
+        img {
+            display: block;
+            height: 200px;
+            width: auto;
+            margin: auto auto;
+        }
+        
     }
 }

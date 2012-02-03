@@ -2,11 +2,11 @@
 
 - services_list =  ["imagen_corporativa", "elaboracion_listados", "confirmacion_asistentes", "mailing", "secretaria_tecnica", "protocolo_evento", "azafatas_congresos_imagen", "medios_audiovisuales", "gabinete_prensa", "transfers", "montaje_stands", "traductores", "viajes_alojamiento"]
 
-#services_container.grid_16.big_panel
-  %ul#services_list.grid_4.alpha.left_panel
+#services_container.big_panel
+  %ul#services_list.left_panel
     - services_list.each do |service|
       =service_link service
 
-  %service_details_container.grid_12.omega.right_panel
+  %service_details_container.right_panel
     - services_list.each do |service|
       =service_details_panel service
