@@ -6,9 +6,9 @@ Heima::Application.routes.draw do
   
   # config/routes.rb
   scope "/:locale", :as => "l" do
-    get "home/index" => "home#index", :as => "home"
-    get "services/index" => "services#index", :as => "services"
-    get "events/index" => "events#index", :as => "events"
+    get "home/" => "home#index", :as => "home"
+    get "services/" => "services#index", :as => "services"
+    get "events/" => "events#index", :as => "events"
     root :to => "home#index"
   end
   
