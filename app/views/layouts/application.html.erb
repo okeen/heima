@@ -6,7 +6,8 @@
   <%= stylesheet_link_tag    params[:controller] %>
   <%= javascript_include_tag  params[:controller] %>
   <%= csrf_meta_tags %>
-  <%#= yield :metadata %>
+  <%= yield :metadata %>
+  <title><%= t "#{params[:controller]}.title" %> - Heima</title>
 </head>
 <body >
   <%= render :partial => "shared/header" %>

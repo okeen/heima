@@ -9,25 +9,28 @@ header {
     background-position: top right;
     img#main_logo {
         position: relative;
-        left: 50px;
-        top: 5px;
+        left: 10px;
+        top: -10px;
         float: left;
         width: 300px;
         
     }
     ul#header_nav {
-        //$ninesixty-columns: 8;
-        @include grid-prefix(2);
-        @include grid(8,16);
+        $nav_item_separation: 5px;
+        @include inline_block_list_container;
+        width: 340px;
         text-align: center;
         float: right;
-        margin: {top: 20px;}
+        margin: {top: 5px;}
         nav {
+           @include inline_block_list_item($nav_item_separation);
+           width: 70px;
+            
            &:first-child * { @include alpha;}
            &:last-child * { @include omega;}  
         }
         nav li {
-            @include grid(2,16);
+            width: 100%;
             a {color: white;}
             &:hover, &:hover a {
                 background: $gris_claro;
@@ -38,6 +41,5 @@ header {
     }
     
     ul#languages_bar {
-        margin: {top: 40px;}  
     }
 }
