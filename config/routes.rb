@@ -1,8 +1,6 @@
 Heima::Application.routes.draw do
   
   
-  get "events/index"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
@@ -10,6 +8,7 @@ Heima::Application.routes.draw do
   scope "/:locale", :as => "l" do
     get "home/index" => "home#index", :as => "home"
     get "services/index" => "services#index", :as => "services"
+    get "events/index" => "events#index", :as => "events"
     root :to => "home#index"
   end
   

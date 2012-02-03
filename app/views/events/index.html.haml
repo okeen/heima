@@ -1,2 +1,12 @@
-%h1 Events#index
-%p Find me in app/views/events/index.html.haml
+%h1= t "events.title"
+
+- events_list =  ["dia_letras_galegas", "premios_galicia_comunicacion", "encuentro_audiovisual_galaico_latinoamericano", "jj_ii_cuentas_economicas", "congresos_ciudade_cultura"]
+
+#events_container.grid_16.big_panel
+  %ul#events_list.grid_4.alpha.left_panel
+    - events_list.each do |event|
+      =event_link event
+
+  %events_details_container.grid_12.omega.right_panel
+    - events_list.each do |event|
+      =event_details_panel event
