@@ -23,4 +23,8 @@ module ApplicationHelper
             
     end
   end
+  
+  def authors_link
+    link_to "etware", "http://www.etware.es"
+  end
 end

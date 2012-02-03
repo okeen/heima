@@ -23,9 +23,11 @@ body {
       padding-top: 400px;
       background: none;
       ul#home_panels {
+        
         height: 200px;
         margin: {top: 0px; bottom: 50px; left: 30px; right: 30px;}
         li {
+            @include grid(5,16);
             height: 100%;
             border: {
                 radius: 10px;

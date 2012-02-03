@@ -8,7 +8,9 @@ es:
       services: Servicios
       events: Eventos
       contact: Contacto
-  
+  footer:
+    created_by: "por"
+    
   home:
     panels:
       presentation: "<strong>Heima Tours Galicia</strong>, somos una empresa dedicada al mundo de los viajes y congresos compuesta por un excelente equipo de profesionales, expertos en turismo, con una dilatada experiencia en el mundo del protocolo y la organización de eventos."

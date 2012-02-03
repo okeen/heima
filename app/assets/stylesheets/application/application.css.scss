@@ -6,11 +6,10 @@
 @import "../application/header.css.scss";
 @import "../application/footer.css.scss";
 @import "../application/languages_bar.css.scss";
-@import "960/grid";
-@import "compass/utilities/general/clearfix";
 
 body {
-    
+    $ninesixty_columns: 16;
+    @include grid_container;
     #content {
         height: 600px;
         background: $gris_claro;
@@ -34,7 +33,6 @@ body {
 }
 
 .big_panel {
-    $ninesixty-columns: 16;
     @include grid(16);
     background: white;
     padding: {top: 20px; bottom: 10px;}    

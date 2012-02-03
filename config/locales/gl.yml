@@ -8,6 +8,8 @@ gl:
       services: Servizos
       events: Eventos
       contact: Contacto
+  footer:
+    created_by: "por"
   
   home:
     panels:

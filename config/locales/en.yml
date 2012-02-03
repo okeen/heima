@@ -9,6 +9,9 @@ en:
       events: Events
       contact: Contact
   
+  footer:
+    created_by: "by"
+  
   home:
     panels:
       presentation: "<strong>Heima Tours Galicia</strong>, we are a blah blah...."
