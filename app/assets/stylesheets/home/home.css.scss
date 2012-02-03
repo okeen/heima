@@ -6,42 +6,63 @@
 
 
 body {
-  background-image: $home_body_background_url;
-  background-repeat: no-repeat;
-  background-position: top center;
-  
-  img#main_logo {
-    position: relative;
-    left: 200px;
-    top: 100px;
-    float: left;
-    width: 300px;
+    background-image: $home_body_background_url;
+    background-repeat: no-repeat;
+    background-position: top center;
     
-  }
-  #content {
-      height: 200px;
-      padding-top: 400px;
-      background: none;
-      ul#home_panels {
+    img#main_logo {
+        position: relative;
+        left: 200px;
+        top: 100px;
+        float: left;
+        width: 300px;
         
-        height: 200px;
-        margin: {top: 0px; bottom: 50px; left: 30px; right: 30px;}
-        li {
-            @include grid(5,16);
-            height: 100%;
-            border: {
-                radius: 10px;
+    }
+    #content {
+        
+        //height: 200px;
+        padding-top: 400px;
+        background: none;
+        ul#home_panels {
+            
+            height: 200px;
+            margin: {top: 0px; bottom: 50px; left: 30px; right: 30px;}
+            li {
+                @include grid(5,16);
+                height: 100%;
+                border: {
+                    radius: 10px;
+                }
+                background: $gris_claro;
+                img, p {
+                    border: {
+                        radius: 7px;
+                    }
+                    margin: 10px 10px;
+                    width: 260px;
+                }
             }
-            background: $gris_claro;
-        img, p {
-           border: {
-                radius: 7px;
-            }
-           margin: 10px 10px;
-           width: 260px;
-          }
         }
-        
-      }
-  }
+        fieldset#customers_panel {
+            border: 2px solid $gris_oscuro {
+                radius: 5px;           
+            }
+            margin: 10px;
+            $customer_image_separation: 10px;
+            padding: $customer_image_separation;
+            legend {
+                margin: {left: 10px; right: 10px;}
+                color: $gris_oscuro;
+            }
+            ul {
+                @include inline_block_list($customer_image_separation);
+                li {
+                    width: 50px;
+                    min-height: 50px;
+                    img {width: 100%;}
+                }
+            }
+            
+        }
+    }
 }

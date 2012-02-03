@@ -14,7 +14,9 @@ es:
   home:
     panels:
       presentation: "<strong>Heima Tours Galicia</strong>, somos una empresa dedicada al mundo de los viajes y congresos compuesta por un excelente equipo de profesionales, expertos en turismo, con una dilatada experiencia en el mundo del protocolo y la organización de eventos."
-  
+    customers:
+      legend: Clientes
+      
   services:
     title: Servicios
     main_desc: "Servicios prestados por Heima"
