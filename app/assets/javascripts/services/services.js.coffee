@@ -25,5 +25,6 @@ $ ->
     filterByFamily(item_family)
   
   setTimeout =>
-    showServiceInfo("imagen_corporativa")
+    showServiceInfo "imagen_corporativa"
+    filterByFamily "congresos"
   , 10

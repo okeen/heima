@@ -25,4 +25,5 @@ $ ->
     
   setTimeout =>
     showServiceInfo("dia_letras_galegas")
+    
   , 10

@@ -1,0 +1,97 @@
+/*
+Document   : 9_9_mosaic.css
+Created on : Feb 4, 2012, 3:45:13 PM
+Author     : eneko
+Description:
+Purpose of the stylesheet follows.
+*/
+
+/*
+TODO customize this sample style
+Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+*/
+ul.nine_nine_mosaic {
+    $ninesixty_columns: 12;
+    @include clearfix;
+    @include grid(12);
+    li {
+        min-height: 200px;
+        @include grid(4,12);
+        
+        &:first-child, &:nth-child(4), &:nth-child(7), * { @include alpha;}
+        &:last-child , &:nth-child(3), &:nth-child(6), * { @include omega;}
+
+        border: {
+            radius: 10px;
+        }
+        background: $gris_claro;
+        img, p {
+            border: {
+                radius: 7px;
+            }
+            margin: 10px 10px;
+            width: 100%;
+        }
+    }
+    li.center_void {
+            
+    }
+}
+
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+        

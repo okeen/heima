@@ -1,13 +1,15 @@
 - content_for(:metadata) do 
   - ""
 
-%ul#home_panels
-  
-  %li
+%ul#home_panels.nine_nine_mosaic 
+  %li.logo
+    = image_tag "Heima_Logo.png"
+
+  %li.item.text_mosaic_panel{:data => { :category => "one" }}
     %p= t("home.panels.presentation").html_safe
-  %li
+  %li.item.image_mosaic_panel{:data => { :category => "one" }}
     = image_tag "home/Igape.jpg"
-  %li
+  %li.item.image_mosaic_panel{:data => { :category => "one" }}
     = image_tag "home/Igape.jpg"
 
 %fieldset#customers_panel

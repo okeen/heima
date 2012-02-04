@@ -3,6 +3,7 @@
 */
 
 @import "shared/base.css.scss";
+@import "home/9_9_mosaic";
 
 
 body {
@@ -10,39 +11,19 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     
-    img#main_logo {
+/*    img#main_logo {
         position: relative;
         left: 200px;
         top: 100px;
         float: left;
         width: 300px;
         
-    }
+    }*/
     #content {
         
         //height: 200px;
         padding-top: 300px;
         background: none;
-        ul#home_panels {
-            
-            height: 200px;
-            margin: {top: 0px; bottom: 30px; left: 30px; right: 30px;}
-            li {
-                @include grid(5,16);
-                height: 100%;
-                border: {
-                    radius: 10px;
-                }
-                background: $gris_claro;
-                img, p {
-                    border: {
-                        radius: 7px;
-                    }
-                    margin: 10px 10px;
-                    width: 260px;
-                }
-            }
-        }
         fieldset#customers_panel {
             border: 2px solid $gris_oscuro {
                 radius: 5px;           
