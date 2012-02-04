@@ -1,0 +1,93 @@
+/*
+Document   : big_panel.css
+Created on : Feb 4, 2012, 2:14:48 PM
+Author     : eneko
+Description:
+Purpose of the stylesheet follows.
+*/
+
+/*
+TODO customize this sample style
+Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+*/
+
+
+.big_panel {
+    $ninesixty_columns: 16;
+    $left_panel_width: 280px;
+    @include grid(16);
+    background: white;
+    padding: {top: 10px; bottom: 10px;}    
+    border-radius: 15px;
+    
+    .categories_tabs {
+        width: $left_panel_width;
+        margin: auto auto;
+        @include inline-block-list;      
+        li.category {
+          width: $left_panel_width / 2 - 12px;
+          margin: 5px;
+          text-align: center;
+          a  {
+             width: 100%;    
+             color: $verde;
+                    }
+        }
+    }
+    .left_panel {
+        @include grid(5);
+        //@include alpha;        
+        margin: {top: 25px; bottom: 25px;}
+        $item_height: 25px;
+        //border-right: 2px solid $verde;
+        li {
+            margin: {top: 5px; bottom: 5px;left: 0px;}
+            height: $item_height;
+            border-radius: 5px;
+            line-height: $item-height;
+            width: 100%;
+            text-align: right;
+            padding: {left: 0px; right: 0px;}
+            
+            &:nth-child(even) {
+                background: lighten($verde, 44%);
+            }
+            &:nth-child(odd) {
+                background: lighten($verde, 47%);
+            }
+            
+            &:hover {
+                background: $gris_claro;                  
+                border-radius: 5px;
+                
+            }
+            a {
+                color: black;
+                margin-right: 5px;
+            }
+            
+        }        
+    }
+    .right_panel {
+        @include grid(11);
+        @include omega;
+        margin-left: 0px;
+        h2 {
+            color: $verde;
+            text-align: center;
+            width: 66% ;
+            margin: auto auto ;
+            border-bottom: 1px solid $verde;
+        } 
+        p {
+            margin: {top: 30px; bottom: 20px; left: 30px;}
+        }
+        img {
+            display: block;
+            height: 200px;
+            width: auto;
+            margin: auto auto;
+        }
+        
+    }
+}

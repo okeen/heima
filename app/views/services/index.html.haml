@@ -1,8 +1,14 @@
 %h1= t "services.title"
 
-- services_list =  ["imagen_corporativa", "elaboracion_listados", "confirmacion_asistentes", "mailing", "secretaria_tecnica", "protocolo_evento", "azafatas_congresos_imagen", "medios_audiovisuales", "gabinete_prensa", "transfers", "montaje_stands", "traductores", "viajes_alojamiento"]
+- services_list =  ["imagen_corporativa:congresos", "elaboracion_listados:congresos", "confirmacion_asistentes:congresos", "mailing:congresos", "secretaria_tecnica:congresos", "protocolo_evento:congresos", "azafatas_congresos_imagen:congresos", "medios_audiovisuales:congresos", "gabinete_prensa:congresos", "transfers:congresos", "montaje_stands:congresos", "traductores:congresos", "viajes_alojamiento:viajes"]
 
 #services_container.big_panel
+  %ul#categories_tabs.categories_tabs
+    %li.category
+      %a{:href => "#", :data => {'item-family' => "congresos"}} congresos       
+    %li.category
+      %a{:href => "#", :data => {'item-family' => "viajes"}} viajes
+
   %ul#services_list.left_panel
     - services_list.each do |service|
       =service_link service
