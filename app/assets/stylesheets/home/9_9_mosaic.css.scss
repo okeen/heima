@@ -10,88 +10,41 @@ Purpose of the stylesheet follows.
 TODO customize this sample style
 Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 */
+@import "compass/css3.scss";
+
 ul.nine_nine_mosaic {
+    $panels_height: 200px;
+        
     $ninesixty_columns: 12;
+    height: $panels_height * 3 + 60px;
     @include clearfix;
     @include grid(12);
     li {
-        min-height: 200px;
+        //margin: {top: 10px; bottom: 10px}
         @include grid(4,12);
-        
         &:first-child, &:nth-child(4), &:nth-child(7), * { @include alpha;}
         &:last-child , &:nth-child(3), &:nth-child(6), * { @include omega;}
 
+        &.void_item { visibility: hidden ;}
         border: {
             radius: 10px;
         }
-        background: $gris_claro;
-        img, p {
-            border: {
-                radius: 7px;
+        div {
+            height: $panels_height;
+            @include background-clip(padding-box);
+	    border: 10px solid transparentize($gris_claro, 0.6); 
+            background: transparentize($gris_claro, 0.6);
+            width: 280px;
+            margin: {top: 10px; bottom: 10px;}
+            img, p {
+                background-color: none;
+                width: 100%;
+                display: block;
             }
-            margin: 10px 10px;
-            width: 100%;
+            img { }
         }
     }
     li.center_void {
             
     }
 }
-
-
-.isotope-item {
-  z-index: 2;
-}
-
-.isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
-}
-
-/**** Isotope CSS3 transitions ****/
-
-.isotope,
-.isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
-}
-
-.isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
-}
-
-.isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-       -o-transition-property:         top, left, opacity;
-          transition-property:         transform, opacity;
-}
-
-/**** disabling Isotope CSS3 transitions ****/
-
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
-}
-
-/* End: Recommended Isotope styles */
-
-
-
-/* disable CSS transitions for containers with infinite scrolling*/
-.isotope.infinite-scrolling {
-  -webkit-transition: none;
-     -moz-transition: none;
-       -o-transition: none;
-          transition: none;
-}
-        
