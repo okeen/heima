@@ -13,12 +13,12 @@ Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 @import "compass/css3.scss";
 
 ul.nine_nine_mosaic {
-    $panels_height: 200px;
-        
+    $panels_height: 150px;
     $ninesixty_columns: 12;
-    height: $panels_height * 3 + 60px;
+    height: $panels_height * 3 + 100px;
     @include clearfix;
     @include grid(12);
+    margin-bottom: 40px;
     li {
         //margin: {top: 10px; bottom: 10px}
         @include grid(4,12);
@@ -26,13 +26,13 @@ ul.nine_nine_mosaic {
         &:last-child , &:nth-child(3), &:nth-child(6), * { @include omega;}
 
         &.void_item { visibility: hidden ;}
-        border: {
-            radius: 10px;
-        }
         div {
             height: $panels_height;
             @include background-clip(padding-box);
 	    border: 10px solid transparentize($gris_claro, 0.6); 
+            border: {
+                radius: 10px;
+            }
             background: transparentize($gris_claro, 0.6);
             width: 280px;
             margin: {top: 10px; bottom: 10px;}

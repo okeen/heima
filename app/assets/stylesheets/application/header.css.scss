@@ -16,17 +16,17 @@ header {
         
     }
     ul#header_nav {
-        $nav_item_separation: 0px;
+        $nav_item_separation: 1px;
         @include inline_block_list_container;
-        background: white;   
-        opacity: 0.7;
+        background: transparentize($gris_claro, 0.6);
         width: 305px;
         text-align: center;
-        margin: {top: 5px; right: 5px;}
+        margin: 5px;
         float: right;
         nav {
             @include inline_block_list_item($nav_item_separation);
-            margin: {top: 4px;bottom: 0px;}
+            margin: {top: 2px;bottom: 2px;}
+            //margin: 5px;
             width: 70px;
             &:first-child * { @include alpha;}
             &:last-child  { 
@@ -34,7 +34,7 @@ header {
             }  
         }
         nav li {
-            @include border-top-radius(5px);
+            @include border-radius(5px);
             background: $verde;
             opacity: 1.0; 
             width: 100%;

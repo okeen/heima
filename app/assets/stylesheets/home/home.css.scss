@@ -12,17 +12,16 @@ body {
     background-position: top center;
     
     img#main_logo {
-        display:none;
-        position: relative;
+        //display:none;
+/*        position: relative;
         left: 200px;
         top: 100px;
         float: left;
-        width: 300px;
+        width: 300px;*/
         
     }
     #content {
         
-        padding-top: 5px;
         background: none;
         fieldset#customers_panel {
             border: 2px solid $gris_oscuro {

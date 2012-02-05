@@ -51,6 +51,7 @@ class NineNineMosaicView extends Backbone.View
     elems = $(@el).find "li"
     elems.detach()
     @randomizePanels elems  
+    
     elems.appendTo $(@el)
 #    @centerVoid.appendTo @el 
 #    voidPanelsToAttachCount = 9 - newItems.length - 2 #minus main logo and center panel
@@ -60,6 +61,7 @@ class NineNineMosaicView extends Backbone.View
   randomizePanels: (panels) ->
     panels.sort (item) -> 
       Math.round(Math.random())-0.5
+      
   
 (exports ? this).NineNineMosaicView = NineNineMosaicView
 
