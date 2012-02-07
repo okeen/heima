@@ -4,6 +4,9 @@ class NineNineMosaicView extends Backbone.View
   
   initialize: (opts = {}) ->
     @el= opts.el || $ "ul.nine_nine_mosaic" 
+    @imageItems= $(@el).find "li.item.image_mosaic_panel"
+    @textItems= $(@el).find "li.item.text_mosaic_panel"
+    
     @mosaicOptions= 
       itemSelector : "li" 
       filter: ".shown"
@@ -15,13 +18,14 @@ class NineNineMosaicView extends Backbone.View
     
   render: () =>
     @createVoidPanels()
+    @imageItems.detach()
     setTimeout () =>
       @showMosaic()
     , 100
     
   createVoidPanels: () ->
     @voidPanels=[]
-    @centerVoid= $("<li class='center_void.void_item'><div></div></li>")
+    @centerVoid= $("<li class='center_void void_item'><div></div></li>")
     @voidPanels= ($("<li class='void_item'><div></div></li>.") for item in [0..7]) 
     voidPanelsToAttachCount = 9 - $(@el).find(".item").length - 1 #minus main logo and center panel
     @voidPanels[index].appendTo(@el) for index in [0...voidPanelsToAttachCount]
@@ -48,11 +52,18 @@ class NineNineMosaicView extends Backbone.View
   
   
   rebuildMosaic: () =>
-    elems = $(@el).find "li.item.image_mosaic_panel"
-    elems.detach()
-    @randomizePanels elems  
-    panelToShow= elems[0...Math.round(Math.random()*3)]
-    elems.appendTo $(@el)
+    currentElems = $(@el).find("li.item, li.void_item").detach()
+    @randomizePanels( @imageItems) and @randomizePanels( @textItems)
+    imagePanelsToShow= @imageItems[0...Math.ceil(1 + Math.random()*2)]
+    textPanelsToShow= @textItems[0]
+    newMosaic= @voidPanels[0...7-imagePanelsToShow.length]
+    newMosaic.push imagePanel for imagePanel in imagePanelsToShow
+    newMosaic.push textPanelsToShow
+    @randomizePanels newMosaic
+    currentCenterItem = newMosaic[4]
+    newMosaic[3]= @centerVoid
+    newMosaic.push currentCenterItem 
+    $(mosaicItem).appendTo $(@el) for mosaicItem in newMosaic
 #    @centerVoid.appendTo @el 
 #    voidPanelsToAttachCount = 9 - newItems.length - 2 #minus main logo and center panel
 #    @voidPanels[index].appendTo(@el) for index in [0...voidPanelsToAttachCount]
