@@ -15,10 +15,10 @@ Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
 ul.nine_nine_mosaic {
     $panels_height: 150px;
     $ninesixty_columns: 12;
-    height: $panels_height * 3 + 100px;
+    height: $panels_height * 3 + 120px;
     @include clearfix;
     @include grid(12);
-    margin-bottom: 40px;
+    margin: {bottom: 10px;}
     li {
         //margin: {top: 10px; bottom: 10px}
         @include grid(4,12);

@@ -9,8 +9,8 @@ header {
     background-position: top right;
     img#main_logo {
         position: relative;
-        left: 10px;
-        top: -10px;
+        left: -15px;
+        top:  10px;
         float: left;
         width: 300px;
         
@@ -18,10 +18,12 @@ header {
     ul#header_nav {
         $nav_item_separation: 1px;
         @include inline_block_list_container;
-        background: transparentize($gris_claro, 0.6);
+        background: none;
+/*        background: transparentize($gris_claro, 0.6);*/
         width: 305px;
         text-align: center;
         margin: 5px;
+        margin-top: 7px;
         float: right;
         nav {
             @include inline_block_list_item($nav_item_separation);
@@ -44,6 +46,7 @@ header {
             &:hover, &:hover a {
                 background: $gris_claro;
                 color: $verde; 
+                
             }
             
         }

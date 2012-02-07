@@ -72,3 +72,9 @@ en:
       name: "Trips and hosting"
       description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
    
+  contact:
+    title: Contact
+    email: "administracion@heima.es"  
+    address: Address
+    phone: Phone
+    

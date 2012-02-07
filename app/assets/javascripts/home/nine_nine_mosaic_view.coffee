@@ -48,10 +48,10 @@ class NineNineMosaicView extends Backbone.View
   
   
   rebuildMosaic: () =>
-    elems = $(@el).find "li"
+    elems = $(@el).find "li.item.image_mosaic_panel"
     elems.detach()
     @randomizePanels elems  
-    
+    panelToShow= elems[0...Math.round(Math.random()*3)]
     elems.appendTo $(@el)
 #    @centerVoid.appendTo @el 
 #    voidPanelsToAttachCount = 9 - newItems.length - 2 #minus main logo and center panel

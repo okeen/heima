@@ -9,7 +9,7 @@
 body {
     background-image: $home_body_background_url;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center 360px;
     
     img#main_logo {
         //display:none;
@@ -24,14 +24,11 @@ body {
         
         background: none;
         fieldset#customers_panel {
-            border: 2px solid $gris_oscuro {
-                radius: 5px;           
-            }
-            @include grid(16,16);
+            border-top: 2px solid $gris_oscuro; 
+            border-radius: 5px;
+            width: 100%;
             margin-bottom: 0px;
-            
             $customer_image_separation: 10px;
-            padding: $customer_image_separation;
             legend {
                 margin: {left: 10px; right: 10px;}
                 color: $gris_oscuro;
@@ -39,8 +36,8 @@ body {
             ul {
                 @include inline_block_list($customer_image_separation);
                 li {
-                    width: 50px;
-                    min-height: 50px;
+                    width: 40px;
+                    min-height: 40px;
                     img {width: 100%;}
                 }
             }

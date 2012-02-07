@@ -2,9 +2,9 @@
 
 #contact_card
     =image_tag image_path("contact/qrcode.png"), :id => "qrcode"
-    %h2 Heima - Azafatas y Congresos
-    %p.address1 C/ Agro Do Medio, 16B
+    %h2 Heima Tours
+    %p.address1 <span>#{t 'contact.address'}: </span>C/ Agro Do Medio, 16B
     %p.address2 15895 Milladoiro - Ames, A Coruña
-    %p.tfns= "#{t "contact.phone"}: 881 979010 - Fax: 881 979060".html_safe
-    %p.email= "Email: #{mail_to t('contact.email')}".html_safe
+    %p.tfns <span>#{t "contact.phone"}:</span> 881 979010 - <span>Fax:</span> 881 979060
+    %p.email <span>Email:</span> #{mail_to t('contact.email')}
     

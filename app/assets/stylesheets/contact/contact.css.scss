@@ -1,29 +1,45 @@
 @import "shared/base";
 
-body #content #contact_card{
-  @include grid(16,16);
-  @include clearfix;
-  margin-bottom: 10px;
-  @include border-bottom-radius(10px);
-  text-align: right;
-  background: white;
-  background-image: $contact_heima_image !important;
-  background-repeat: no-repeat;
-  background-position: 60% 20%;
-  img#qrcode {
-              float: left;
-          }
-  h2, p {margin-right: 30px;}
-  h2 {
-      color: $verde;
-      margin: {top:20px;bottom: 20px;}    
-          }
-  p {
-    margin-bottom: 10px; 
-  }
-  
-  p.email {
-    margin-top: 30px;        
-    a{ color: $verde;}
-  }
+img#main_logo {
+        display:none;
+    }
+
+body #content {
+  margin-bottom: 250px;
+        
+}
+#contact_card{
+    @include grid(16,16);
+    @include clearfix;
+    margin-bottom: 10px;
+    @include border-bottom-radius(10px);
+    text-align: right;
+    background: white;
+    background-image: $contact_heima_image !important;
+    background-repeat: no-repeat;
+    background-position: 280px 45px;
+    img#qrcode {
+        float: left;
+        width: 140px;
+        margin: {
+            top: 30px;
+            left: 40px;
+        }
+    }
+    h2, p {margin-right: 30px;}
+    h2 {
+        color: $verde;
+        margin: {top:20px;bottom: 20px;}    
+    }
+    p {
+        margin-bottom: 10px; 
+    }
+    
+    p.email {
+        margin-top: 30px;        
+        a{ color: $verde;}
+    }
+    span {
+      color: $gris_oscuro;        
+    }
 }

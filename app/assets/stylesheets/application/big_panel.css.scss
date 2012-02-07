@@ -18,8 +18,8 @@ Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
     @include grid(16);
     background: white;
     padding: {top: 10px; bottom: 10px;}    
-    border-radius: 15px;
-    
+    @include border-bottom-radius(15px);
+    min-height: 400px;
     .categories_tabs {
         width: $left_panel_width;
         margin: auto auto;
