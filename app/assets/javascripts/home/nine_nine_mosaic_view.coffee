@@ -31,25 +31,26 @@ class NineNineMosaicView extends Backbone.View
     @voidPanels[index].appendTo(@el) for index in [0...voidPanelsToAttachCount]
   
   showMosaic: () =>
-    $(@el).find("li").fadeOut()
+    $(@el).find("li").animate
+        opacity: 0.0
+      , 400
 #    @mosaicOptions.filter= "none"
 #    $(@el).isotope(@mosaicOptions);
     setTimeout () =>
       @rebuildMosaic()
-      $(@el).find("li").fadeIn()
+      @delayedFadeIn(mosaicItem) for mosaicItem in $(@el).find("li")
     , 600
-    
-#    $(@el).find(".logo").addClass "shown"
-#    $(@el).find(".center_void").addClass "shown"
-#    $(@el).find("li").addClass "shown"
-#    #$(@el).isotope(@mosaicOptions);
-#    @mosaicOptions.filter= ".shown"
     setTimeout () =>
-#      setTimeout () =>
       @showMosaic()
-#      , 2000
-    , 2500
+    , 5000
   
+  delayedFadeIn: (item) =>
+    timeOut= Math.ceil(1 + Math.random()*600)
+    setTimeout ()=>
+      $(item).animate
+        opacity: 1.0
+      , 400  
+    , timeOut
   
   rebuildMosaic: () =>
     currentElems = $(@el).find("li.item, li.void_item").detach()
