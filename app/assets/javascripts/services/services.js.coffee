@@ -27,4 +27,4 @@ $ ->
   setTimeout =>
     showServiceInfo "imagen_corporativa"
     filterByFamily "congresos"
-  , 10
+  , 1

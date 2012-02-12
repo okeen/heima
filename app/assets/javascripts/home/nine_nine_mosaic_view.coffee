@@ -2,6 +2,8 @@ class NineNineMosaicView extends Backbone.View
 
   tagName: "ul"
   
+  textItemIdex: 0
+  
   initialize: (opts = {}) ->
     @el= opts.el || $ "ul.nine_nine_mosaic" 
     @imageItems= $(@el).find "li.item.image_mosaic_panel"
@@ -19,27 +21,32 @@ class NineNineMosaicView extends Backbone.View
   render: () =>
     @createVoidPanels()
     @imageItems.detach()
-    setTimeout () =>
-      @showMosaic()
-    , 100
+    @showMosaic()
+    $(@el).removeClass "hiding"
     
   createVoidPanels: () ->
     @voidPanels=[]
     @centerVoid= $("<li class='center_void void_item'><div></div></li>")
     @voidPanels= ($("<li class='void_item'><div></div></li>.") for item in [0..7]) 
-    voidPanelsToAttachCount = 9 - $(@el).find(".item").length - 1 #minus main logo and center panel
-    @voidPanels[index].appendTo(@el) for index in [0...voidPanelsToAttachCount]
-  
+    voidPanel.appendTo(@el) for voidPanel in @voidPanels
+    
   showMosaic: () =>
+    $(@el).animate
+        opacity: 0.0
+      , 500  
     $(@el).find("li").animate
         opacity: 0.0
-      , 400
+      , 500
 #    @mosaicOptions.filter= "none"
 #    $(@el).isotope(@mosaicOptions);
     setTimeout () =>
+      $(@el).animate
+        opacity: 1.0
+      , 500  
+    
       @rebuildMosaic()
       @delayedFadeIn(mosaicItem) for mosaicItem in $(@el).find("li")
-    , 600
+    , 500
     setTimeout () =>
       @showMosaic()
     , 5000
@@ -54,15 +61,14 @@ class NineNineMosaicView extends Backbone.View
   
   rebuildMosaic: () =>
     currentElems = $(@el).find("li.item, li.void_item").detach()
-    @randomizePanels( @imageItems) and @randomizePanels( @textItems)
     imagePanelsToShow= @imageItems[0...Math.ceil(1 + Math.random()*2)]
-    textPanelsToShow= @textItems[0]
+    textPanelsToShow= @textItems[(@textItemIdex++)%@textItems.length]
     newMosaic= @voidPanels[0...7-imagePanelsToShow.length]
     newMosaic.push imagePanel for imagePanel in imagePanelsToShow
     newMosaic.push textPanelsToShow
     @randomizePanels newMosaic
-    currentCenterItem = newMosaic[4]
-    newMosaic[3]= @centerVoid
+    currentCenterItem = newMosaic[5]
+    newMosaic[4]= @centerVoid
     newMosaic.push currentCenterItem 
     $(mosaicItem).appendTo $(@el) for mosaicItem in newMosaic
 #    @centerVoid.appendTo @el 

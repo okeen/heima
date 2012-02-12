@@ -2,10 +2,10 @@
 #header_container {
     @include clearfix;
     $nav_height:53px;
-    $header_height: 100px;
+    $header_height: 150px;
     background: white;
     header {
-        //height: $header_height;
+        height: $header_height;
         //position: relative;
         margin-top: -$nav_height; 
         /*  @include clearfix;*/
@@ -15,7 +15,7 @@
         img#main_logo {
             position: relative;
             left: -15px;
-            top:  10px;
+            top:  25px;
             float: left;
             width: 300px;
             
@@ -40,6 +40,7 @@
             background-repeat: no-repeat;
             background-position: top right;
             height: $nav_height;
+            @include border-bottom-radius(5px);
             overflow: visible;
             /*        background: transparentize($gris_claro, 0.6);*/
             @include grid-container;

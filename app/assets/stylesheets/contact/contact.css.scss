@@ -1,13 +1,9 @@
 @import "shared/base";
 
 img#main_logo {
-        display:none;
+        visibility:hidden;
     }
 
-body #content {
-  margin-bottom: 250px;
-        
-}
 #contact_card{
     @include grid(16,16);
     @include clearfix;

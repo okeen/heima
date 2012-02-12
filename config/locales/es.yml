@@ -14,7 +14,11 @@ es:
   home:
     title: Inicio
     panels:
-      presentation: "<strong>Heima Tours Galicia</strong>, somos una empresa dedicada al mundo de los viajes y congresos compuesta por un excelente equipo de profesionales, expertos en turismo, con una dilatada experiencia en el mundo del protocolo y la organización de eventos."
+      presentation:
+        first: "<strong>Heima Tours Galicia</strong>, viajes y congresos"
+        second: "expertos en <strong>turismo y viajes</strong>"
+        third: "dilatada experiencia en el mundo del <strong>protocolo</strong> y la organización de <strong>eventos</strong>."
+        
     customers:
       legend: Clientes
     
@@ -24,79 +28,119 @@ es:
     
     imagen_corporativa: 
       name: "Diseño de imagen corporativa"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
     
     elaboracion_listados: 
       name: "Elaboración de listados"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
     
     confirmacion_asistentes: 
       name: "Confirmación de asistentes"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
      
     mailing: 
       name: "Mailing"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
     
     secretaria_tecnica: 
       name: "Secretaría técnica"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
     
     protocolo_evento: 
       name: "Protocolo del evento"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
     
     azafatas_congresos_imagen: 
       name: "Azafatas de congresos"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
      
     medios_audiovisuales: 
       name: "Medios audiovisuales"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
     
     gabinete_prensa: 
       name: "Gabinete de prensa"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
      
     transfers: 
       name: "Transfers"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
      
     montaje_stands: 
       name: "Montaje de stands"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
    
     traductores: 
       name: "Traductores"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
+      description: ""
    
     viajes_alojamiento: 
       name: "Viajes y alojamiento"
-      description: "Blahjkahfkjshfkjshdkfjshfkjdhfksd"
-   
+      description: ""
+    
+    reservas_transportes: 
+      name: "Reservar de barco, avión y tren"
+      description: ""
+    
+    reservas_hoteles: 
+      name: "Reservas de hoteles"
+      description: ""
+    
+    coches: 
+      name: "Coches alquiler y conductor"
+      description: "Reserva de coches de alquiler con y sin conductor."
+    
+    tarifas_especiales: 
+      name: "Tarifas especiales grupos"
+      description: "Tarifas especiales para grupos, así como precios bonificados   por reserva con antelación"
+    personal_acompañamiento: 
+      name: "Personal de acompañamiento"
+      description: "Personal especializado en acompañamiento de grupos y apoyo técnico"
+    viajes_incentivos: 
+      name: "Viajes de incentivos"
+      description: ""
+    delegaciones_comerciales: 
+      name: "Delegaciones comerciales"
+      description: ""
+    entrega_tarjetas_embarque: 
+      name: "Entrega tarjetas de embarque"
+      description: "De avión, tren y barco."
+    tarjetas_fidelizacion: 
+      name: "Tarjetas de fidelización"
+      description: ""
+    excursiones_galicia: 
+      name: "Excursiones por Galicia"
+      description: ""
+    visitas_guiadas: 
+      name: "Visitas guiadas"
+      description: ""
+    viajes_organizados: 
+      name: "Viajes organizados"
+      description: ""
+    
   events:
     title: Eventos
     main_desc: "Eventos gestionados por Heima"
     
     dia_letras_galegas:
       name: "Día de las letras galegas"
-      description: "skljdhaskjdhaskjdhakjshdaskjdhakjdhas"
+      description: ""
     
     premios_galicia_comunicacion:
       name: "Premios Galicia Comunicación"
-      description: "skljdhaskjdhaskjdhakjshdaskjdhakjdhas"
+      description: ""
     
     encuentro_audiovisual_galaico_latinoamericano:
       name: "Encuentro audiovisual galaico..."
-      description: "skljdhaskjdhaskjdhakjshdaskjdhakjdhas"
+      description: ""
     
     jj_ii_cuentas_economicas:
       name: "JJII Cuentas Económicas"
-      description: "skljdhaskjdhaskjdhakjshdaskjdhakjdhas"
+      description: ""
     
     congresos_ciudade_cultura:
       name: "Congresos Ciudad de la Cultura"
-      description: "skljdhaskjdhaskjdhakjshdaskjdhakjdhas"
+      description: ""
     
   contact:
     title: Contacto

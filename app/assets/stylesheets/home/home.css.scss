@@ -7,10 +7,10 @@
 
 
 body {
-    background-image: $home_body_background_url;
+/*    background-image: $home_body_background_url;
     background-repeat: no-repeat;
     background-position: center 360px;
-    
+    */
     img#main_logo {
         //display:none;
 /*        position: relative;
@@ -21,8 +21,7 @@ body {
         
     }
     #content {
-        
-        background: none;
+        background: none !important;
         fieldset#customers_panel {
             border-top: 2px solid $gris_oscuro; 
             border-radius: 5px;

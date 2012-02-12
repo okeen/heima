@@ -16,12 +16,10 @@ class LocaleChooserView extends Backbone.View
   render: () ->
   
   contractAndHideOtherLocales: () =>
-    console.log "LocaleChooserView contract"
     $(@el).find(".locale").hide()
     $(@el).find(".locale.current_locale").show()
   
   expandAndShowOtherLocales: () =>
-    console.log "LocaleChooserView expand"
     $(@el).find(".locale").show()
 #    $(@el).animate  
   
