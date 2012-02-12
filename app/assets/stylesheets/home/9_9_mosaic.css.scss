@@ -39,7 +39,7 @@ ul.nine_nine_mosaic {
         div {
             height: $panels_height;
             @include background-clip(padding-box);
-	    border: 10px solid transparentize($verde, 0.8); 
+	    border: 10px solid transparentize($gris_oscuro, 0.8); 
             border: {
                 radius: 10px;
             }
