@@ -8,20 +8,30 @@
 @import "../application/languages_bar.css.scss";
 @import "../application/big_panel.css.scss";
 
+html, body, #content_container  {height: 100%;}
+
+
 body {
-    $ninesixty_columns: 16;
-    @include grid_container;
-    #content {
+    #content_container {
+        height: auto; 
+        min-height: 100%; 
+        background: white;
         @include clearfix;
-        background: $gris_claro;
-        border-radius: 15px;
-        margin: {top:50px; bottom: 10px;}
-        padding: {top: 0px; bottom: 10px;}
-        h1 {
-            text-align: left;
-            color: $gris_oscuro;
-            width: 100%;
-            margin: {top: 10px;bottom: 5px;left: 10px;}
+        
+        #content {
+            @include clearfix;
+            $ninesixty_columns: 16;
+            @include grid_container;
+            background: $gris_claro;
+            border-radius: 15px;
+            margin: {top:50px; bottom: 10px;}
+            padding: {top: 0px; bottom: 10px;}
+            h1 {
+                text-align: left;
+                color: $gris_oscuro;
+                width: 100%;
+                margin: {top: 10px;bottom: 5px;left: 10px;}
+            }
         }
     }
     a {

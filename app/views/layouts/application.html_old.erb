@@ -7,7 +7,7 @@
   <%= javascript_include_tag  params[:controller] %>
   <%= csrf_meta_tags %>
   <%= yield :metadata %>
-  <title><%= t "#{params[:controller]}.title" %> - Heima</title>
+  <title>Heima - <%= t  "#{params[:controller]}.title" %> </title>
 </head>
 <body >
   <%= render :partial => "shared/header" %>

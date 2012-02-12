@@ -4,11 +4,12 @@ $flags_spacing: 3px;
 
 ul#available_languages {
   float: right;
-  width: $languages_bar_width;
+  //width: $languages_bar_width;
   margin: {right: 0px; top: 4px;}
   li.locale {
      width: $flags_width;
      margin: $flags_spacing;
+     float: right;
      a {
        img {
            width: 100%;
