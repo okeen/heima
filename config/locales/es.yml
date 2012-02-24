@@ -87,29 +87,29 @@ es:
     celebracion_convencion:
       name: "Celebración de la Convención CNAE'2011"
     premios_tesoura:
-      name: "Entrega premios Tesoura 2010"
+      name: "Entrega premios Tesoura, 2010"
     cogami:
       name: "Celebración del XX aniversario de Cogami, 2010"
     congreso_ibby:
       name: "Servicio de azafatas bilingües para el Congreso Ibby"
     xacobeo_2010:
-      name: "Festival Xacobeo 2010"
+      name: "Festival, Xacobeo 2010"
     servicio_aereo:
       name: "XX Aniversario del Servicio Aéreo de Rescate e Inspección Pesquera de la Xunta de Galicia 2010"
     enfermedades_dixestivas:
-      name: "Semana e las enfermedades digestivas"
+      name: "Semana e las enfermedades digestivas, 2010"
     orden_san_lazaro:
-      name: "Congresos Ciudad de la Cultura"
+      name: "Encuentro de la Order Militar y Hospitalaria de San Lázaro, 2010"
     mulleres_cineastas:
-      name: "Congresos Ciudad de la Cultura"
+      name: "Congreso internacional de las mujeres cineastas, 2010"
     galicia_premium:
-      name: "Congresos Ciudad de la Cultura"
+      name: "Galicia Premium, 2010"
     roma_santiago:
-      name: "Congresos Ciudad de la Cultura"
+      name: "Exposición Roma - Santiago - Roma, 2010"
     lugares_cultura:
-      name: "Congresos Ciudad de la Cultura"
+      name: "I Congreso Internacional Lugares de la Cultura, 2010"
     premio_maria:
-      name: "Congresos Ciudad de la Cultura"
+      name: "II Edición Premios Maria Wonenburguer"
     
   contact:
     title: Contacto
