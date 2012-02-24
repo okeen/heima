@@ -69,30 +69,47 @@ es:
         first: "Reserva de vuelos, hoteles, traslados privados, excursiones, paquetes de viaje combinado, cruceros, etc."
         second: "Viajes de empresa, incentivos, congresos, novios, estudiantes, tercera edad, grupos, etc."
       
-    
   events:
     title: Eventos
-    main_desc: "Eventos gestionados por Heima"
-    
-    dia_letras_galegas:
-      name: "Día de las letras galegas"
-      description: ""
-    
-    premios_galicia_comunicacion:
-      name: "Premios Galicia Comunicación"
-      description: ""
-    
-    encuentro_audiovisual_galaico_latinoamericano:
-      name: "Encuentro audiovisual galaico..."
-      description: ""
-    
-    jj_ii_cuentas_economicas:
-      name: "JJII Cuentas Económicas"
-      description: ""
-    
-    congresos_ciudade_cultura:
+    main_desc: "Algunos de nuestros eventos"
+    atencion_auditorio_galicia:
+      name: "Servicio de Atención al Publico del Auditorio de Galicia y del Teatro Principal de Santiago:2011"
+    congreso_farmacia_hospitalaria:
+      name: "56 Congreso Internacional de Farmacia Hospitalaria Servicio de Azafatas: Octubre 2011"
+    concierto_filarmonica:
+      name: "Concierto de la Real Filarmónica de Galicia con motivo del 800 aniversario de la catedral de Santiago"
+    galicia_ceo:
+      name: "Ciclo literario 'Galicia Ceo das Letras, 2011'"
+    semana_verde:
+      name: "Servicio de intérpretes y azafatas en los distintos eventos realizados en la Fundación Semana Verde de Galicia"
+    sabor_aventura:
+      name: "El sabor de la aventura está en el mar, 2011"
+    celebracion_convencion:
+      name: "Celebración de la Convención CNAE'2011"
+    premios_tesoura:
+      name: "Entrega premios Tesoura 2010"
+    cogami:
+      name: "Celebración del XX aniversario de Cogami, 2010"
+    congreso_ibby:
+      name: "Servicio de azafatas bilingües para el Congreso Ibby"
+    xacobeo_2010:
+      name: "Festival Xacobeo 2010"
+    servicio_aereo:
+      name: "XX Aniversario del Servicio Aéreo de Rescate e Inspección Pesquera de la Xunta de Galicia 2010"
+    enfermedades_dixestivas:
+      name: "Semana e las enfermedades digestivas"
+    orden_san_lazaro:
       name: "Congresos Ciudad de la Cultura"
-      description: ""
+    mulleres_cineastas:
+      name: "Congresos Ciudad de la Cultura"
+    galicia_premium:
+      name: "Congresos Ciudad de la Cultura"
+    roma_santiago:
+      name: "Congresos Ciudad de la Cultura"
+    lugares_cultura:
+      name: "Congresos Ciudad de la Cultura"
+    premio_maria:
+      name: "Congresos Ciudad de la Cultura"
     
   contact:
     title: Contacto
