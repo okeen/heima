@@ -1,7 +1,52 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-//= 
+//= depend_on shared/base
+
+@import "shared/base";
 @import "../site/jquery.galleryview-3.0-dev.css";
 @import "../site/jquery.galleryview-3.0-dev-slider.css";
 @import "../site/jquery.galleryview-3.0-dev-panning.css";
+
+
+.big_panel {
+    background: white;  
+    padding-bottom: 30px !important;
+}
+#gallery_container{
+    width: 400px;
+    margin: {top: 35px; left: auto; right: auto; bottom: 30px}
+}
+
+h3 {margin: {top:50px;left: 20px;bottom: 30px;}}
+
+ul#events_list{
+    li {
+        $item_height: 25px;
+        margin: {top: 10px; bottom: 5px;left: 20px; right: 20px;}
+        height: $item_height;
+        border-radius: 5px;
+        line-height: $item-height;
+        width: auto;
+        padding: {left: 0px; right: 0px;}
+        
+        &:nth-child(even) {
+            background: lighten($verde, 44%);
+        }
+        &:nth-child(odd) {
+            background: lighten($verde, 47%);
+        }
+        
+        &:hover {
+            background: $gris_claro;                  
+            border-radius: 5px;
+            
+        }
+        a {
+            color: black;
+            margin-right: 5px;
+            cursor: text;
+        }   
+    }
+}
+    

@@ -2,23 +2,30 @@
 
 - events_list =  ["atencion_auditorio_galicia", "congreso_farmacia_hospitalaria", "concierto_filarmonica", "galicia_ceo", "semana_verde", "sabor_aventura", "celebracion_convencion", "premios_tesoura", "cogami", "congreso_ibby", "xacobeo_2010", "servicio_aereo", "enfermedades_dixestivas", "orden_san_lazaro", "mulleres_cineastas", "galicia_premium", "roma_santiago", "lugares_cultura", "premio_maria"]
 
-#events_container.big_panel
-  %ul#events_list.left_panel
+.big_panel
+  .events_details_panel
+    #gallery_container
+      %ul#gallery
+        %li 
+          %img{:src => image_path("events/CeoLetras_2.jpg")}
+        %li 
+          %img{:src => image_path("events/Cima_1.jpg")}
+        %li 
+          %img{:src => image_path("events/Cima_2.jpg")}
+        %li 
+          %img{:src => image_path("events/Igape_2.jpg")}
+        %li 
+          %img{:src => image_path("events/Igape_1.jpg")}
+        %li 
+          %img{:src => image_path("events/Igape.jpg")}
+        %li 
+          %img{:src => image_path("events/Cima_3.jpg")}
+        %li 
+          %img{:src => image_path("events/TheGift_1.jpg")}
+
+  %h3= t("events.main_desc")
+  %ul#events_list
     - events_list.each do |event|
       =event_link event
 
-  %events_details_container.right_panel
-    .events_details_panel
-      %h2= t("events.atencion_auditorio_galicia.name")
-      %ul#gallery
-        %li 
-          %img{:src => image_path("events/imagen_corporativa.jpg")}
-        %li 
-          %img{:src => image_path("events/imagen_corporativa.jpg")}
-        %li 
-          %img{:src => image_path("events/imagen_corporativa.jpg")}
-        %li 
-          %img{:src => image_path("events/imagen_corporativa.jpg")}
-        %li 
-          %img{:src => image_path("events/imagen_corporativa.jpg")}
         

@@ -2,6 +2,9 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
   
-$ ->
+$ -> 
     
-  $('#gallery').galleryView()    
+  $('#gallery').galleryView
+    panel_width: 375
+    panel_height: 200
+    panel_scale: "fit"
