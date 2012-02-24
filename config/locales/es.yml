@@ -27,96 +27,48 @@ es:
     main_desc: "Servicios prestados por Heima"
     
     imagen_corporativa: 
-      name: "Diseño de imagen corporativa"
-      description: ""
+      name: "Imagen corporativa y audivisual"
+      description: 
+        first: "Diseño de imagen corporativa, cartelería, papelería y web"
+        second: "Técnicos y medios Audiovisuales, Montajes de Stands"
     
-    elaboracion_listados: 
-      name: "Elaboración de listados"
-      description: ""
-    
-    confirmacion_asistentes: 
-      name: "Confirmación de asistentes"
-      description: ""
+    asesoramiento: 
+      name: "Asesoramiento y organización técnica"
+      description: 
+        first: "Estudio de necesidades, fechas adecuadas del evento y planificación de todos los servicios del congreso"
+        second: "Prospección  y alquiler de espacios como sede del evento."
+        third: "Contratación, gestión y coordinación de proveedores."
+        
+    gabinete_protocolo: 
+      name: "Gabinete de protocolo"
+      description: "Precedencias, tratamientos, recepción de autoridades e invitados, distribución de los asistentes y orden de intervenciones."
      
-    mailing: 
-      name: "Mailing"
-      description: ""
-    
-    secretaria_tecnica: 
-      name: "Secretaría técnica"
-      description: ""
-    
-    protocolo_evento: 
-      name: "Protocolo del evento"
-      description: ""
-    
-    azafatas_congresos_imagen: 
-      name: "Azafatas de congresos"
-      description: ""
+    gabinete_comunicacion: 
+      name: "Gabinete de comunicación"
+      description: "Coordinación con los medios de prensa, gestión de entrevistas, elaboración de notas y reportajes en los diferentes medios de comunicación."
      
-    medios_audiovisuales: 
-      name: "Medios audiovisuales"
-      description: ""
+    programa_social: 
+      name: "Programa Social"
+      description: 
+        first: "Actividades sociales para ponentes y congresistas."
+        second: "Cocktail de bienvenida, almuerzo de trabajo, excursiones, cenas de gala y programa para acompañantes."
     
-    gabinete_prensa: 
-      name: "Gabinete de prensa"
-      description: ""
-     
-    transfers: 
-      name: "Transfers"
-      description: ""
-     
-    montaje_stands: 
-      name: "Montaje de stands"
-      description: ""
-   
-    traductores: 
-      name: "Traductores"
-      description: ""
-   
-    viajes_alojamiento: 
-      name: "Viajes y alojamiento"
-      description: ""
-    
-    reservas_transportes: 
-      name: "Reservar de barco, avión y tren"
-      description: ""
-    
-    reservas_hoteles: 
-      name: "Reservas de hoteles"
-      description: ""
-    
-    coches: 
-      name: "Coches alquiler y conductor"
-      description: "Reserva de coches de alquiler con y sin conductor."
-    
-    tarifas_especiales: 
-      name: "Tarifas especiales grupos"
-      description: "Tarifas especiales para grupos, así como precios bonificados   por reserva con antelación"
-    personal_acompañamiento: 
-      name: "Personal de acompañamiento"
-      description: "Personal especializado en acompañamiento de grupos y apoyo técnico"
-    viajes_incentivos: 
-      name: "Viajes de incentivos"
-      description: ""
-    delegaciones_comerciales: 
-      name: "Delegaciones comerciales"
-      description: ""
-    entrega_tarjetas_embarque: 
-      name: "Entrega tarjetas de embarque"
-      description: "De avión, tren y barco."
-    tarjetas_fidelizacion: 
-      name: "Tarjetas de fidelización"
-      description: ""
-    excursiones_galicia: 
-      name: "Excursiones por Galicia"
-      description: ""
-    visitas_guiadas: 
-      name: "Visitas guiadas"
-      description: ""
-    viajes_organizados: 
-      name: "Viajes organizados"
-      description: ""
+    azafatas: 
+      name: "Azafatas y personal auxiliar"
+      description: 
+        first: "Pondremos a disposición del evento un equipo con amplia experiencia:"
+        second: "Azafatas auxiliares bilingües."
+        third: "Auxiliares de Protocolo."
+        fourth: "Intérpretes Consecutivos y Simultáneos."
+        fifth: "Intérpretes de lenguaje de Signos."
+        sixth: "Auxiliares Técnicos."
+      
+    agencia_viajes: 
+      name: "Agencia de Viajes"
+      description: 
+        first: "Reserva de vuelos, hoteles, traslados privados, excursiones, paquetes de viaje combinado, cruceros, etc."
+        second: "Viajes de empresa, incentivos, congresos, novios, estudiantes, tercera edad, grupos, etc."
+      
     
   events:
     title: Eventos

@@ -1,18 +1,62 @@
 %h1= t "services.title"
 
-- services_list =  ["imagen_corporativa:congresos", "elaboracion_listados:congresos", "confirmacion_asistentes:congresos", "mailing:congresos", "secretaria_tecnica:congresos", "protocolo_evento:congresos", "azafatas_congresos_imagen:congresos", "medios_audiovisuales:congresos", "gabinete_prensa:congresos", "transfers:congresos", "montaje_stands:congresos", "traductores:congresos", "viajes_alojamiento:viajes", "reservas_transportes:viajes", "reservas_hoteles:viajes", "coches:viajes", "tarifas_especiales:viajes", "personal_acompañamiento:viajes", "viajes_incentivos:viajes", "delegaciones_comerciales:viajes", "entrega_tarjetas_embarque:viajes", "tarjetas_fidelizacion:viajes", "excursiones_galicia:viajes", "visitas_guiadas:viajes", "viajes_organizados:viajes"]
+- services_list =  ["imagen_corporativa", "asesoramiento", "gabinete_protocolo", "gabinete_comunicacion", "programa_social", "azafatas", "agencia_viajes"]
 
 #services_container.big_panel
-  %ul#categories_tabs.categories_tabs
-    %li.category
-      %a{:href => "#", :data => {'item-family' => "congresos"}} congresos       
-    %li.category
-      %a{:href => "#", :data => {'item-family' => "viajes"}} viajes
-
+  
   %ul#services_list.left_panel
     - services_list.each do |service|
       =service_link service
 
   %service_details_container.right_panel
-    - services_list.each do |service|
-      =service_details_panel service
+    .services_details_panel{:style => "display:none", :data => {:item_name => "imagen_corporativa"}}
+      %h2= t("services.imagen_corporativa.name")
+      %p= t("services.imagen_corporativa.description.first")
+      %p= t("services.imagen_corporativa.description.second")
+      .two_images
+        %img{:src => image_path("services/imagen_corporativa.jpg")}
+        %img{:src => image_path("services/medios_audiovisuales.jpg")}
+
+    .services_details_panel{:style => "display:none", :data => {:item_name => "asesoramiento"}}
+      %h2= t("services.asesoramiento.name")
+      %p= t("services.asesoramiento.description.first")
+      %p= t("services.asesoramiento.description.second")
+      %p= t("services.asesoramiento.description.third")
+      .two_images
+        %img{:src => image_path("services/elaboracion_listados.jpg")}
+        %img{:src => image_path("services/traductores.jpg")}
+
+    .services_details_panel{:style => "display:none", :data => {:item_name => "gabinete_protocolo"}}
+      %h2= t("services.gabinete_protocolo.name")
+      %p= t("services.gabinete_protocolo.description")
+      .two_images
+        %img{:src => image_path("services/protocolo_evento.jpg")}
+        %img{:src => image_path("services/secretaria_tecnica.jpg")}
+
+    .services_details_panel{:style => "display:none", :data => {:item_name => "gabinete_comunicacion"}}
+      %h2= t("services.gabinete_comunicacion.name")
+      %p= t("services.gabinete_comunicacion.description")
+      %img{:src => image_path("services/gabinete_prensa.jpg")}
+        
+    .services_details_panel{:style => "display:none", :data => {:item_name => "programa_social"}}
+      %h2= t("services.programa_social.name")
+      %p= t("services.programa_social.description.first")
+      %p= t("services.programa_social.description.second")
+
+    .services_details_panel{:style => "display:none", :data => {:item_name => "azafatas"}}
+      %h2= t("services.azafatas.name")
+      %p= t("services.azafatas.description.first")
+      %ul
+        %li= t("services.azafatas.description.second")
+        %li= t("services.azafatas.description.third")
+        %li= t("services.azafatas.description.fourth")
+        %li= t("services.azafatas.description.fifth")
+        %li= t("services.azafatas.description.sixth")
+      %img{:src => image_path("services/azafatas_congresos.jpg")}
+
+    .services_details_panel{:style => "display:none", :data => {:item_name => "agencia_viajes"}}
+      %h2= t("services.agencia_viajes.name")
+      %p= t("services.agencia_viajes.description.first")
+      %p= t("services.agencia_viajes.description.second")
+      %img{:src => image_path("services/transfers.jpg")}
+
