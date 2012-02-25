@@ -2,11 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //= depend_on shared/base
+//= require ../site/jquery.galleryview-3.0-dev-slider.css
 
 @import "shared/base";
-@import "../site/jquery.galleryview-3.0-dev.css";
-@import "../site/jquery.galleryview-3.0-dev-slider.css";
-@import "../site/jquery.galleryview-3.0-dev-panning.css";
 
 
 .big_panel {
