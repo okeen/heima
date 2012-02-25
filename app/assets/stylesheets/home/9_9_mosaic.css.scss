@@ -19,8 +19,13 @@ ul.nine_nine_mosaic {
     height: $panels_height * 3 + 120px;
     @include clearfix;
     @include grid(12);
-    margin: {bottom: 10px;}
-    @include background-image(radial-gradient(50% 50%, circle contain, lighten($verde, 10%), white));
+    margin: {bottom: 55px;}
+    
+    //@include background-image(radial-gradient(50% 50%, circle contain, lighten($verde, 10%), white));
+    @include background-image($home_body_background_url);
+    background-repeat: no-repeat;
+    background-position: 210 40;
+    
     //define a complementary gradient
     &.hiding {
         visibility: none !important;

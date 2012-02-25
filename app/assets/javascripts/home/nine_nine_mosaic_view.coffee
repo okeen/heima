@@ -32,9 +32,9 @@ class NineNineMosaicView extends Backbone.View
     
   showMosaic: () =>
     $(@el).animate
-        opacity: 0.0
+        opacity: 0.5
       , 500  
-    $(@el).find("li").animate
+    $(@el).find("li.image_mosaic_panel").animate
         opacity: 0.0
       , 500
 #    @mosaicOptions.filter= "none"
@@ -66,8 +66,11 @@ class NineNineMosaicView extends Backbone.View
     textPanelsToShow= @textItems[(@textItemIdex++)%@textItems.length]
     newMosaic= @voidPanels[0...7-imagePanelsToShow.length]
     newMosaic.push imagePanel for imagePanel in imagePanelsToShow
-    newMosaic.push textPanelsToShow
     @randomizePanels newMosaic
+    @randomizePanels newMosaic
+    currentFirst= newMosaic[0]
+    newMosaic[0]= textPanelsToShow
+    newMosaic[8]= currentFirst
     currentCenterItem = newMosaic[5]
     newMosaic[4]= @centerVoid
     newMosaic.push currentCenterItem 

@@ -32,7 +32,7 @@
         $to_color:$color_nav;
         @include background-image(linear-gradient($from_color, $to_color, $from_color));*/
         
-        
+            
         ul#header_nav {
             $nav_item_separation: 1px;
             @include inline_block_list_container;
@@ -45,6 +45,8 @@
             /*        background: transparentize($gris_claro, 0.6);*/
             @include grid-container;
             text-align: center;
+            padding-right: 20px;
+            
             li {
                 
             }

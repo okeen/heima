@@ -26,17 +26,20 @@ body {
             border-top: 2px solid $gris_oscuro; 
             border-radius: 5px;
             width: 100%;
-            margin-bottom: 0px;
+            display: block;
+            margin-top: 50px;
+            margin-bottom: 60px;
             $customer_image_separation: 10px;
             legend {
-                margin: {left: 10px; right: 10px;}
+                margin: {left: 10px; right: 10px}
+                display: block;
                 color: $gris_oscuro;
             }
             ul {
                 @include inline_block_list($customer_image_separation);
                 li {
-                    width: 40px;
-                    min-height: 40px;
+                    width: 100px;
+                    min-height: 70px;
                     img {width: 100%;}
                 }
             }

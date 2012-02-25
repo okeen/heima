@@ -19,7 +19,8 @@ body #content_container #content {
         height: $footer_height;
         @include clearfix;
         @include border-top-radius(5px);
-            
+        padding-left: 20px;
+                
         $ninesixty_columns: 12;
         @include grid_container;
         background-image: $footer_url;
@@ -27,10 +28,10 @@ body #content_container #content {
         background-position: bottom left;
         
         p {
-            margin-top: 16 px;
+            margin-top: 24 px;
             float: left;
             color: white;
-            font-size: 14px;
+            font-size: 12px;
             a {color: orange;}
         }
         #page_authors {
