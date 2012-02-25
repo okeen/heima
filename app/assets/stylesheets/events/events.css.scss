@@ -18,7 +18,11 @@
     margin: {top: 35px; left: auto; right: auto; bottom: 30px}
 }
 
-h3 {margin: {top:50px;left: 20px;bottom: 30px;}}
+h3 {
+        margin: {top:50px;left: 20px;bottom: 30px;}
+        color: $verde;
+        text-align: center;
+}
 
 ul#events_list{
     li {
@@ -28,7 +32,7 @@ ul#events_list{
         border-radius: 5px;
         line-height: $item-height;
         width: auto;
-        padding: {left: 0px; right: 0px;}
+        padding-left: 10px;
         
         &:nth-child(even) {
             background: lighten($verde, 44%);
