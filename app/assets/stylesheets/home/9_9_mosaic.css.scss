@@ -25,10 +25,11 @@ ul.nine_nine_mosaic {
     @include background-image($home_body_background_url);
     background-repeat: no-repeat;
     background-position: 210 40;
-    
+    visibility: hidden ;
+        
     //define a complementary gradient
-    &.hiding {
-        visibility: none !important;
+    &.started {
+        visibility: inherit; 
         //@include background-image(radial-gradient(50% 50%, circle contain, $gris_claro, white));
     }
     li {

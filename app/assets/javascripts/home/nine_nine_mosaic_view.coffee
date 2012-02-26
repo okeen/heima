@@ -22,7 +22,6 @@ class NineNineMosaicView extends Backbone.View
     @createVoidPanels()
     @imageItems.detach()
     @showMosaic()
-    $(@el).removeClass "hiding"
     
   createVoidPanels: () ->
     @voidPanels=[]
@@ -40,6 +39,7 @@ class NineNineMosaicView extends Backbone.View
 #    @mosaicOptions.filter= "none"
 #    $(@el).isotope(@mosaicOptions);
     setTimeout () =>
+      $(@el).addClass "started"
       $(@el).animate
         opacity: 1.0
       , 500  
@@ -62,7 +62,8 @@ class NineNineMosaicView extends Backbone.View
   rebuildMosaic: () =>
     currentElems = $(@el).find("li.item, li.void_item").detach()
     @randomizePanels @imageItems
-    imagePanelsToShow= @imageItems[0...Math.ceil(1 + Math.random()*2)]
+    @randomizePanels @imageItems
+    imagePanelsToShow= @imageItems[0...Math.ceil(2 + Math.random()*2)]
     textPanelsToShow= @textItems[(@textItemIdex++)%@textItems.length]
     newMosaic= @voidPanels[0...7-imagePanelsToShow.length]
     newMosaic.push imagePanel for imagePanel in imagePanelsToShow
